@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="worst perimeter <= 106.1\ngini = 0.478\nsamples = 398\nvalue = [157, 241]\nclass = benign", fillcolor="#baddf6"] ;
+1 [label="worst smoothness <= 0.178\ngini = 0.082\nsamples = 234\nvalue = [10, 224]\nclass = benign", fillcolor="#42a1e6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="symmetry error <= 0.009\ngini = 0.035\nsamples = 227\nvalue = [4, 223]\nclass = benign", fillcolor="#3d9fe5"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = malignant", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="gini = 0.026\nsamples = 226\nvalue = [3, 223]\nclass = benign", fillcolor="#3c9ee5"] ;
+2 -> 4 ;
+5 [label="worst texture <= 20.065\ngini = 0.245\nsamples = 7\nvalue = [6, 1]\nclass = malignant", fillcolor="#e9965a"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = benign", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 6\nvalue = [6, 0]\nclass = malignant", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="worst perimeter <= 117.45\ngini = 0.186\nsamples = 164\nvalue = [147, 17]\nclass = malignant", fillcolor="#e89050"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="mean texture <= 15.745\ngini = 0.489\nsamples = 40\nvalue = [23, 17]\nclass = malignant", fillcolor="#f8decb"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 10\nvalue = [0, 10]\nclass = benign", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="gini = 0.358\nsamples = 30\nvalue = [23, 7]\nclass = malignant", fillcolor="#eda775"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 124\nvalue = [124, 0]\nclass = malignant", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
